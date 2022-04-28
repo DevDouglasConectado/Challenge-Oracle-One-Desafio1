@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap');
+
+
+:root{
+    --cor0:#5202F9;
+    --cor1:#0D02DB;
+    --cor2:#0A3CF2;
+    --cor3:#1272d8;
+    --cor3b:#1272d825;
+    --cor3a:#1272d831;
+    --cor4:#a4e3f8;
+    --cor5:rgba(39, 34, 34, 0.212);
+}
+
+/**********cabeçalho***************/
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top,var(--cor2),var(--cor4));
+    box-shadow: 1px 1px 5px 1px grey;
+    padding-top: 2px;
+}
+.imagem{
+    margin-top: 7px;
+}
+header img{
+    
+    transform: translatey(0px);
+    animation:float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-8px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+.titulo{
+    font-family: 'Press Start 2P',cursive;
+    color: black;
+    padding: 10px;
+    margin-left: 20px;
+    width: 90%;
+   
+}
+header h1{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+ .typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+   
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 18em;
+    }
+}
+
+@keyframes blinkCursor {
+    from{
+        border-right-color:rgba(0, 0, 0, 0.74) ;
+    }
+    to{
+        border-right-color:white ;
+    }
+
+}
+
+/*****
+*****************************/
+/*pai*/
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    background-color: white;
+    margin: 5px;
+    width: 45%;
+    min-height: 50px;
+    
+}
+/*******pai  do textare e botton**********/
+.content{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+/***pai do textare ***/
+.div_textare_codi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.spann{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color:white;
+  }
+.spann p{
+    width: 100%;
+    height: 35px;
+    margin-top: 2px;
+    margin-right: 3px;
+    color: black;
+    padding-top: 15px;
+    text-align: center;
+    background-color:var(--cor3b);
+    border-radius: 25px;
+    box-shadow: 1px 1px 5px 1px grey;
+    font-size: 0.7em;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+/*.div_textare_codi >*/
+
+ #textArea{
+    background-color:var(--cor4);
+    color: black;
+    width: 90%;
+    height: 460px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px grey;
+    font-size: 0.7em;
+    font-family: 'Press Start 2P',cursive;
+}
+#contentPhrase{
+    background-color: var(--cor4);
+    color: black;
+    width: 90%;
+    height: 380px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 1px grey;
+    font-size: 0.7em;
+    font-family: 'Press Start 2P',cursive;
+}
+
+
+
+/***pai****/
+.botton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttonbutton{
+    
+        background-color: var(--cor3); /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 10px;
+        margin: 10px 8px;
+        cursor: pointer;
+        border-radius: 12px;
+        font-family: 'Press Start 2P',cursive;
+        box-shadow: 1px 1px 5px 1px grey;
+}
+#bottonCopia{
+   
+}
+.buttonbutton:hover {
+    background-color: var(--cor0);
+    color: white;
+  }
+  /********************rodape**************************/
+  
+footer{
+    background-image: linear-gradient(to top,var(--cor2),var(--cor4));
+    padding: 10px;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    
+    /*clear: both;*/
+   
+}
+footer > a{
+    color: white;
+    text-decoration: none;
+    font-weight:bold;
+    text-decoration: underline;
+    color: #0D02DB;
+
+}
+footer> a:hover{
+    background-color: var(--cor4);
+    color: var(--cor0);
+    border-radius: 5px;
+    text-decoration:underline;
+}
+/****************@media**********************/
+@media(max-width:768px){
+    .container{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:768px){
+    .header{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:768px){
+    .content{
+        margin: 5px 0px 5px 0px;
+        width: 100%;
+    }
+ 
+}
+@media(max-width:375px){
+    .botton{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .header{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+

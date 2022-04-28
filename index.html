@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>_criptografia </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+<div id="todo">
+<header class="header">
+    <div class="imagem">
+    <img src="img/Vector.png" alt="Logo Alura">
+    </div>
+    <div class="titulo ">
+       <h1 class="typing-animation">Codificador...</h1>
+    </div>
+
+</header>
+<body>
+    <section class="container">
+        <!--  *****************************************************************-->
+        <div class="content">
+             <div class="div_textare_codi">
+               <textarea type="text" id="textArea" class="text_content  " autofocus="" placeholder="Digite o texto para criptografar..."></textarea>
+            </div>
+
+            <div class="botton">
+                <button id="encryptBtn" class="buttonbutton">Criptografar</button>
+                <button  id="decryptBtn" class="buttonbutton">Descriptografar</button>
+            </div>
+        </div>
+   <!-- **************************************contentPhrase***************************-->
+        <div class="content">
+
+            <div class="spann">
+                <p  class="emptyResult" id="dd">Nenhuma mensagem criptografada
+                </p>
+                <p  class="emptyResult" id="ddkk">
+                </p>
+                
+               
+        </div>
+        <div class="div_textare_codi">
+               <textarea type= "text" readonly id="contentPhrase" value=" " class="text_content" autofocus="" >
+               </textarea>
+            </div>
+            
+            <div class="botton" id="bottonCopia">
+                <button onclick="myFunction()" mouseup="outFunc()"  id="copyBtn" class="buttonbutton">Copia
+            </button>
+         </div>
+        </div>
+</section>
+
+</body>
+<script src="assets/js/index.js"></script>
+<footer>
+    Criador por <a href="https://www.linkedin.com/in/douglasrodriguesdev" target="_blank" ><strong>Douglas Rodrigues</strong></a> junto com <a href="https://www.alura.com.br/" target="_blank"><strong>Alura Latan</strong></a>
+  </footer>
+</div>
+</html>
