@@ -24,6 +24,7 @@
 }
 .imagem{
     margin-top: 7px;
+    margin-left: 20px;
 }
 header img{
     
@@ -42,16 +43,28 @@ header img{
     }
 }
 .titulo{
+    
     font-family: 'Press Start 2P',cursive;
     color: black;
     padding: 10px;
-    margin-left: 20px;
-    width: 90%;
+    /*margin-left: 20px;*/
+    /*width: 90%;*/
+    width: 100%;
+    float: auto;
    
 }
+#h1{
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    width: 70%;
+    font-size: min(60px,5vw) ;
+}
+
 header h1{
     white-space: nowrap;
     overflow: hidden;
+    margin: 0 auto;
 }
 
  .typing-animation{
@@ -63,7 +76,7 @@ header h1{
         width: 0;
     }
     to{
-        width: 18em;
+        width: 13em;
     }
 }
 
@@ -112,12 +125,12 @@ header h1{
     justify-content: center;
     flex-direction: row;
     width: 100%;
-    height: 80px;
+    height: 100%;
     background-color:white;
   }
 .spann p{
     width: 100%;
-    height: 35px;
+    height: 40px;
     margin-top: 2px;
     margin-right: 3px;
     color: black;
@@ -126,9 +139,12 @@ header h1{
     background-color:var(--cor3b);
     border-radius: 25px;
     box-shadow: 1px 1px 5px 1px grey;
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-family: 'Press Start 2P', cursive;
     
+}
+.emptyResult{
+    font-size: min(60px,5vw) ;
 }
 
 /*.div_textare_codi >*/
@@ -239,5 +255,21 @@ footer> a:hover{
         flex-wrap: wrap;
         width: 100%;
     }
+    #h1{
+        flex-wrap: wrap;
+        width: 100%; 
+        height: 100%;
+    }
+    
 }
+@media(max-width:375px){
+    #h1{
+        flex-wrap: wrap;
+        width: 90%; 
+        height: 100%;
+    }   
+}
+
+
+
 
