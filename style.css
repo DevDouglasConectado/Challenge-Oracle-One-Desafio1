@@ -58,7 +58,7 @@ header img{
     overflow: hidden;
     text-align: center;
     width: 70%;
-    font-size: min(60px,5vw) ;
+    font-size: min(60px,3vw) ;
 }
 
 header h1{
